@@ -1,0 +1,85 @@
+{
+    "name": "wilycode/session-php",
+    "description": "Native PHP session adapter with namespaced storage for wilycode/session.",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.4",
+        "ext-session": "*",
+        "wilycode/session": "^0.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "WilyCode\\Session\\Php\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "WilyCode\\Session\\Php\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Simon Piter"
+        }
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-main": "0.1.x-dev"
+        }
+    },
+    "archive": {
+        "exclude": [
+            "/tests",
+            "/examples",
+            "/docs",
+            "/benchmark",
+            "/benchmarks",
+            "/tools",
+            "/phpunit.xml",
+            "/phpunit.xml.dist",
+            "/AGENTS.md",
+            "/CHANGELOG.md",
+            "/CONTRIBUTING.md",
+            "/CODE_OF_CONDUCT.md",
+            "/SECURITY.md",
+            "/composer.lock",
+            "/.github",
+            "/.gitignore",
+            "/.gitattributes",
+            "/.editorconfig",
+            "/.phpunit.cache",
+            "/.phpunit.result.cache",
+            "/phpstan.neon",
+            "/phpstan.neon.dist",
+            "/phpstan.*.neon",
+            "/phpstan.*.neon.dist",
+            "/pint.json",
+            "/rector.php",
+            "/psalm.xml",
+            "/psalm.xml.dist",
+            "/infection.json",
+            "/infection.json.dist"
+        ]
+    },
+    "keywords": [
+        "session",
+        "native php session",
+        "session adapter",
+        "session interface",
+        "namespaced session",
+        "php",
+        "wilycode"
+    ],
+    "homepage": "https://github.com/wilycode/session-php",
+    "support": {
+        "issues": "https://github.com/wilycode/session-php/issues",
+        "source": "https://github.com/wilycode/session-php"
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
